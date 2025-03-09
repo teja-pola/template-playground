@@ -18,12 +18,14 @@ const ToggleDarkMode: React.FC = () => {
 
   return (
     <ToggleDarkModeContainer>
-      <DarkModeToggle
-        className="dark-mode-toggle"
-        onChange={handleChange}
-        checked={isDarkMode}
-        size={80}
-      />
+      <div className="toggle-wrapper">
+        <DarkModeToggle
+          className="dark-mode-toggle"
+          onChange={handleChange}
+          checked={isDarkMode}
+          size={60}
+        />
+      </div>
     </ToggleDarkModeContainer>
   );
 };
